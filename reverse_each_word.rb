@@ -8,5 +8,9 @@ return split_words.join(" ")
 end
 
 def reverse_each_word(string)
-
+split_words = []
+string.split.collect do |word|
+  split_words.push(word.reverse)
+end
+puts split_words.join(" ")
 end
